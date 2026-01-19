@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(dir /s \"C:\\\\Users\\\\kentb\\\\OneDrive\\\\Desktop\\\\Berkeley MIDS\\\\DATASCI 261\\\\Project\")",
-      "Bash(dir:*)",
-      "Bash(powershell:*)"
-    ]
-  }
-}
