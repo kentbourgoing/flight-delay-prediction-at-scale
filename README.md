@@ -1,6 +1,6 @@
 # Flight Delay Prediction at Scale
 
-A scalable distributed machine learning pipeline that predicts flight departure status (Early, On-Time, Delayed) by processing 28 million flight records with weather data on Apache Spark/Databricks. The system achieves 54.6% F1 score using a 6-layer MLP with probability recalibration, demonstrating how multimodal data and deep learning can support airline scheduling decisions and improve passenger experience for 2.9M+ daily passengers.
+A scalable distributed machine learning pipeline that predicts flight departure status (Early, On-Time, Delayed) by processing 28 million flight records with weather data on Apache Spark/Databricks. The system achieves 54.6% F1 score using a 6-layer MLP with probability recalibration, demonstrating how multimodal data and machine learning can support airline scheduling decisions and improve passenger experience for 2.9M+ daily passengers.
 
 ---
 
@@ -84,7 +84,7 @@ flight-delay-prediction/
 │   ├── Phase 2 Presentation.pdf    # Milestone presentation slides
 │   └── Phase 2 Presentation.pptx   # Presentation source
 │
-├── Phase 3/                        # Deep Learning & Scale-Up
+├── Phase 3/                        # Machine Learning & Scale-Up
 │   ├── Phase 3 Report.html         # Comprehensive final report (MAIN DOCUMENT)
 │   ├── Phase 3 Report.ipynb        # Notebook version of final report
 │   ├── Phase 3 - ML Pipeline.ipynb # Production pipeline implementation (ENTRY POINT)
@@ -154,7 +154,7 @@ This phase documents initial data exploration, missing value analysis, and class
 
 This phase covers OTPW dataset construction, feature engineering methodology, and baseline model experiments (Decision Trees, Logistic Regression, Random Forest). Review the HTML report for feature engineering decisions and initial results. No code execution required.
 
-### Phase 3: Production Pipeline & Deep Learning (MAIN EXECUTION)
+### Phase 3: Production Pipeline & Machine Learning (MAIN EXECUTION)
 
 **Location:** `Phase 3/Phase 3 - ML Pipeline.ipynb`
 
@@ -223,18 +223,6 @@ Execute cells sequentially in `Phase 3 - ML Pipeline.ipynb`:
 
 **Expected Runtime:** 17-30 hours total (varies by model complexity and cluster size)
 
-### Quick Start (Using Pre-Trained Results)
-
-If you want to review results without full pipeline execution:
-
-1. Open `Phase 3/Phase 3 Report.html` in a web browser
-2. Review comprehensive results including:
-   - Confusion matrices for all 9 model configurations
-   - Performance metrics (F1, accuracy, precision, recall by class)
-   - Hyperparameter tuning comparisons
-   - Feature importance analysis
-   - Recalibration impact analysis
-
 ---
 
 ## Notes: Limitations and Next Steps
@@ -257,7 +245,7 @@ If you want to review results without full pipeline execution:
 
 - **Real-Time Data Integration:** Incorporate live operational data streams (gate assignments, crew schedules, inbound flight status, maintenance logs) via Apache Kafka or Databricks Delta Live Tables to capture last-minute delay signals and improve minority-class recall by 10-15%.
 
-- **Sequence Modeling:** Replace feature-based MLP with LSTM or Transformer architecture to model temporal dependencies in flight sequences (e.g., cascading delays from inbound flights), leveraging PySpark's distributed deep learning libraries.
+- **Sequence Modeling:** Replace feature-based MLP with LSTM or Transformer architecture to model temporal dependencies in flight sequences (e.g., cascading delays from inbound flights), leveraging PySpark's distributed machine learning libraries.
 
 - **Cost-Sensitive Learning:** Implement asymmetric loss functions that penalize false negatives for Delayed predictions more heavily than false positives, aligning model optimization with business costs ($75 per delayed passenger vs. $10 per unnecessary alert).
 
@@ -291,7 +279,6 @@ If you want to review results without full pipeline execution:
 - **Institution:** UC Berkeley School of Information
 - **Course:** DATASCI 261 - Machine Learning at Scale
 - **Project Duration:** January 2025 - May 2025 (14 weeks)
-- **Project Type:** Team capstone project (6 members)
 
 ---
 
@@ -300,13 +287,9 @@ If you want to review results without full pipeline execution:
 | Name | Email | LinkedIn |
 |------|-------|----------|
 | Kent Bourgoing | kent1bp@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/kentbourgoing/) |
-| Sebastian Rosales | (email) | [LinkedIn](https://www.linkedin.com/in/s-rosales/) |
-| Kenneth Hahn | (email) | [LinkedIn](https://www.linkedin.com/in/kenneth-hahn-ab981a149/) |
-| Benjamin He | (email) | [LinkedIn](https://www.linkedin.com/in/ben-c-he/) |
-| Edgar Munoz | (email) | [LinkedIn](https://www.linkedin.com/in/edgar-munoz256/) |
-| Adam Perez | (email) | [LinkedIn](https://www.linkedin.com/in/adamperez-datascience/) |
+| Sebastian Rosales | sbsrosales11@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/s-rosales/) |
+| Kenneth Hahn | hahnkenneth@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/kenneth-hahn-ab981a149/) |
+| Benjamin He | ben_he@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/ben-c-he/) |
+| Edgar Munoz | edgarmunoz@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/edgar-munoz256/) |
+| Adam Perez | adperez@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/adamperez-datascience/) |
 
-**Phase Leadership:**
-- Phase 1 (EDA): Kent Bourgoing & Benjamin He
-- Phase 2 (Feature Engineering): Sebastian Rosales & Adam Perez
-- Phase 3 (Deep Learning): Kenneth Hahn & Edgar Munoz
