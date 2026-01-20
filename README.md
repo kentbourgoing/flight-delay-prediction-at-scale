@@ -286,7 +286,7 @@ Execute cells sequentially in `Phase 3 - ML Pipeline.ipynb`:
 
 | Name | Email | LinkedIn |
 |------|-------|----------|
-| Kent Bourgoing | kent1bp@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/kentbourgoing/) |
+| Kent Bourgoing | kent1bp@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/kent-bourgoing/) |
 | Sebastian Rosales | sbsrosales11@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/s-rosales/) |
 | Kenneth Hahn | hahnkenneth@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/kenneth-hahn-ab981a149/) |
 | Benjamin He | ben_he@berkeley.edu | [LinkedIn](https://www.linkedin.com/in/ben-c-he/) |
